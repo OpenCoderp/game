@@ -12,28 +12,17 @@ canvas {
 <body onload="startGame()">
 <!-- JavaScript -->
 <script>
-/*!!
- УмныйТеста © 2020 
- --------------------------------
- Кодер или код или разработчик или многое другое
- --------------------------------
-!!*/
 var myGamePiece;
 var myObstacles = [];
 var myScore;
- 
- // Игра чтобы он работал через код JavaScript
 
-
-
- //Очков
 function startGame() {
     myGamePiece = new component(30, 30, "red", 10, 120);
     myGamePiece.gravity = 0.05;
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
 }
-// Куб
+
 var myGameArea = {
     canvas : document.createElement("canvas"),
     start : function() {
@@ -48,7 +37,7 @@ var myGameArea = {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     }
 }
-// Слож
+
 function component(width, height, color, x, y, type) {
     this.type = type;
     this.score = 0;
