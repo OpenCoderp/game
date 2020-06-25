@@ -112,10 +112,9 @@ function updateGameArea() {
     }
     for (i = 0; i < myObstacles.length; i += 1) {
         myObstacles[i].x += -1;
-        myObstacles[i].update();
-		// Текст очков
+        myObstacles[i].update();		
     }
-    myScore.text="ОЧКОВ: " + myGameArea.frameNo;
+    myScore.text="SCORE: " + myGameArea.frameNo;
     myScore.update();
     myGamePiece.newPos();
     myGamePiece.update();
